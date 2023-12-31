@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+*{
+    /* margin: 0 auto; */
+    padding: 0;
+    background: #222;
+    box-sizing: border-box;
+    font-family: Bai Jamjuree, poppins, sans-serif;
+}
+
+body .contactFormhtml{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+}
+.contact h2{
+    padding-top: 200px;
+    font-size: 40px;
+    color: #007ced;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact form{
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+}
+form .input-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+.input-box .input-field{
+    width: 48.5%;
+    align-items: center;
+    justify-content: center;
+}
+.field .item{
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #e5e5e5;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin: 12px 0;
+}
+.field.error .item{
+    border-color: #d93025;
+}
+
+.field .item::placeholder{
+    color: rgba(255,255,255,0.3);
+} 
+.field .error-txt{
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+.field.error .error-txt{
+    display:block;
+}
+
+.textarea-field .item{
+    resize: none;
+}
+.textarea-field .error-txt{
+    margin-top: -10px;
+}
+
+button{
+    padding: 12px 32px;
+    background-color: #007ced;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #007ced;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: ease-in-out;
+}
+button:hover{
+    box-shadow: none;
+}
